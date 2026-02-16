@@ -3,10 +3,13 @@ import Products from "./Products";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import bg from "../assets/bg.png";
+import NavBar from "./NavBar";
+
 const Home = () => {
   return (
     <div>
       <Header />
+      <NavBar />
       <div className="relative">
         <img src={bg} alt="Banner" className="w-full h-96 object-cover" />
         <div className="absolute inset-0 flex items-center justify-center">
