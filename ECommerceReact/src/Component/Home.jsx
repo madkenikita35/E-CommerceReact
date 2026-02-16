@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Header from "./Header";
 import bg from "../assets/bg.png";
 import NavBar from "./NavBar";
+import Search from "./Search";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
           </h1>
         </div>
       </div>
+      <Search />
       <Products />
     </div>
   );

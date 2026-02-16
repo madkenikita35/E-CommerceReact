@@ -27,9 +27,16 @@ const Search = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center m-4">
       <div className="flex gap-2">
         <InputText
+          style={{
+            width: "300px",
+            backgroundColor: "#f2cb55",
+            padding: "0.5rem",
+            borderRadius: "0.375rem",
+            border: "1px solid #d1d5db",
+          }}
           placeholder="Search..."
           onChange={handleChange}
           value={searchTerm}

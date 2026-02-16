@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Avatar } from "primereact/avatar";
-import Search from "./Search";
 
 import MenuBar from "./MenuBar";
 
@@ -15,7 +14,6 @@ const Header = () => {
           size="large"
           shape="circle"
         />
-        <Search />
       </header>
     </div>
   );
