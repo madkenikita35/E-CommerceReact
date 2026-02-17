@@ -19,6 +19,9 @@ const Nav = () => {
           onChange={handleChange}
           value={searchTerm}
         />
+        <button className="bg-amber-500 text-white px-4 py-2 rounded-md">
+          Search
+        </button>
       </div>
       <div className="flex gap-4 text-xl">
         <a href="#">

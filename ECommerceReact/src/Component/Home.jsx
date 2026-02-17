@@ -1,10 +1,11 @@
 import React from "react";
-import Products from "./Products";
+// import Products from "./Products";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import bg from "../assets/bg.png";
 import NavBar from "./NavBar";
-import Search from "./Search";
+import Nave from "./Navigation/Nav";
+import Products from "./Products/Products";
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
           </h1>
         </div>
       </div>
-      <Search />
+      <Nave />
       <Products />
     </div>
   );
