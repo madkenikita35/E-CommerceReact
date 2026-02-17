@@ -11,20 +11,22 @@ import Sidebar from "../Sidebar/Sidebar";
 const Home = () => {
   return (
     <div>
-      <Header />
-      <NavBar />
-      {/* <Sidebar /> */}
-      <div className="relative">
-        <img src={bg} alt="Banner" className="w-full h-96 object-cover" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-white">
-            Welcome to Our E-Commerce Store
-          </h1>
+      <Sidebar />
+      <div className="ml-[20%]">
+        <Header />
+        <NavBar />
+        <div className="relative">
+          <img src={bg} alt="Banner" className="w-full h-96 object-cover" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <h1 className="text-4xl font-bold text-white">
+              Welcome to Our E-Commerce Store
+            </h1>
+          </div>
         </div>
+        <Nave />
+        <Recommendation />
+        <Products />
       </div>
-      <Nave />
-      <Recommendation />
-      <Products />
     </div>
   );
 };
