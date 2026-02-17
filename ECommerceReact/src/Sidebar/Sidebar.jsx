@@ -10,7 +10,6 @@ const Sidebar = () => {
       className=" w-1/5 h-screen fixed left-0 top-0 flex flex-col gap-4 p-4 items-center"
       style={{ backgroundColor: "rgba(227, 170, 25, 0.85)" }}
     >
-      {" "}
       <div>
         <h1 className="text-2xl m-15">
           <FaShoppingCart />
