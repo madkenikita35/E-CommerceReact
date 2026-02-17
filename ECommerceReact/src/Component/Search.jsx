@@ -28,7 +28,7 @@ const Search = () => {
 
   return (
     <div className="flex flex-col items-center m-4">
-      <div className="flex gap-2">
+      <div className="flex gap-4 mb-4">
         <InputText
           style={{
             width: "300px",
@@ -36,26 +36,20 @@ const Search = () => {
             padding: "0.5rem",
             borderRadius: "0.375rem",
             border: "1px solid #d1d5db",
+            marginRight: "0.5rem",
           }}
           placeholder="Search..."
           onChange={handleChange}
           value={searchTerm}
         />
+      </div>
+      <div className="m-4">
         <button
           onClick={searchItem}
           className="bg-amber-500 text-white px-4 py-2 rounded-md"
         >
           Search
         </button>
-      </div>
-
-      {/* Display Results */}
-      <div>
-        {products.map((product) => (
-          <div key={product.id} className="p-2 border-b">
-            {product.title}
-          </div>
-        ))}
       </div>
     </div>
   );

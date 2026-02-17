@@ -1,17 +1,19 @@
 import React from "react";
-// import Products from "./Products";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import bg from "../assets/bg.png";
 import NavBar from "./NavBar";
 import Nave from "./Navigation/Nav";
 import Products from "./Products/Products";
+import Recommendation from "../Recommendation/Recommendation";
+import Sidebar from "../Sidebar/Sidebar";
 
 const Home = () => {
   return (
     <div>
       <Header />
       <NavBar />
+      {/* <Sidebar /> */}
       <div className="relative">
         <img src={bg} alt="Banner" className="w-full h-96 object-cover" />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -21,6 +23,7 @@ const Home = () => {
         </div>
       </div>
       <Nave />
+      <Recommendation />
       <Products />
     </div>
   );

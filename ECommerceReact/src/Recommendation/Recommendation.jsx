@@ -3,34 +3,26 @@ import React from "react";
 const Recommendation = () => {
   return (
     <div className="flex ml-2">
-      <h3 className=" font-bold text-lg">Recommended</h3>
-      <ul className="ml-2">
-        <li>
-          <button className="bg-amber-300 text-white px-2 py-1 rounded">
-            All Products
-          </button>
-        </li>
-        <li>
-          <button className="bg-amber-300 text-white px-2 py-1 rounded">
-            Watch
-          </button>
-        </li>
-        <li>
-          <button className="bg-amber-300 text-white px-2 py-1 rounded">
-            Ring
-          </button>
-        </li>
-        <li>
-          <button className="bg-amber-300 text-white px-2 py-1 rounded">
-            Adidas
-          </button>
-        </li>
-        <li>
-          <button className="bg-amber-300 text-white px-2 py-1 rounded">
-            Shoes
-          </button>
-        </li>
-      </ul>
+      <h3 className=" font-bold text-lg m-4">Recommended</h3>
+
+      <button className="bg-amber-300 text-white px-2 py-1 rounded p-4 m-3">
+        All Products
+      </button>
+
+      <button className="bg-amber-300 text-white px-2 py-1 rounded p-4 m-3">
+        Watch
+      </button>
+
+      <button className="bg-amber-300 text-white px-2 py-1 rounded p-4 m-3">
+        Ring
+      </button>
+      <button className="bg-amber-300 text-white px-2 py-1 rounded p-4 m-3">
+        Adidas
+      </button>
+
+      <button className="bg-amber-300 text-white px-2 py-1 rounded p-4 m-3">
+        Shoes
+      </button>
     </div>
   );
 };

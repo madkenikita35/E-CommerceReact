@@ -15,17 +15,6 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
-      <div className="flex gap-4 text-white mr-2">
-        <a href="#">
-          <FiHeart className="w-5 h-5 ml-2" />
-        </a>
-        <a href="#">
-          <AiOutlineShoppingCart className="w-5 h-5 ml-2" />
-        </a>
-        <a href="#">
-          <AiOutlineUserAdd className="w-5 h-5 ml-2" />
-        </a>
-      </div>
     </div>
   );
 };

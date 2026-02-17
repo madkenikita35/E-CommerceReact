@@ -29,31 +29,25 @@ const Products = () => {
       {loading ? (
         <p>Loading products...</p>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-          {/* Sidebar */}
-          <div className="md:col-span-1">
-            <Recommendation />
-          </div>
-          <div className="md:col-span-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {products.map((product) => (
-                <div
-                  key={product.id}
-                  className="border border-gray-300 p-2 bg-orange-100 rounded-lg flex flex-col items-center gap-2 hover:shadow-lg transition-shadow duration-300"
-                >
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-48 object-contain"
-                  />
-                  <h3 className="font-bold text-sm text-center">
-                    {product.title}
-                  </h3>
-                  <p className="text-red-500">${product.price}</p>
-                  <BsFillBagHeartFill className="text-black cursor-pointer" />
-                </div>
-              ))}
-            </div>
+        <div className="md:col-span-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {products.map((product) => (
+              <div
+                key={product.id}
+                className="border border-gray-300 p-2 bg-orange-100 rounded-lg flex flex-col items-center gap-2 hover:shadow-lg transition-shadow duration-300"
+              >
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="w-full h-48 object-contain"
+                />
+                <h3 className="font-bold text-sm text-center">
+                  {product.title}
+                </h3>
+                <p className="text-red-500">${product.price}</p>
+                <BsFillBagHeartFill className="text-black cursor-pointer" />
+              </div>
+            ))}
           </div>
         </div>
       )}
