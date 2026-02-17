@@ -79,7 +79,7 @@ const MenuBar = () => {
       <Toast ref={toast} />
 
       <button
-        className="bg-orange-500 text-white px-4 py-1 rounded"
+        className="bg-amber-600 text-white px-4 py-1 rounded"
         onClick={(e) => menu.current.toggle(e)}
       >
         Menu
