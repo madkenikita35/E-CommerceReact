@@ -19,7 +19,7 @@ const Products = () => {
       });
   }, []);
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 h-full w-full border-2 border-black-300 rounded-lg p-4 bg-amber-300">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 h-full w-full border-2 border-black-300 rounded-lg p-4 bg-[#f2cb55]">
       {loading ? (
         <p className="col-span-full text-center">Loading products...</p>
       ) : (

@@ -10,6 +10,8 @@ import { FiAlignJustify } from "react-icons/fi";
 import Headline from "./Headline";
 import PromoCard from "./PromoCard";
 import image from "../assets/image.png";
+import image3 from "../assets/image.png";
+import image2 from "../assets/image.png";
 
 const Home = () => {
   const [menu, setMenu] = useState(false);
@@ -24,8 +26,8 @@ const Home = () => {
       <div className={menu ? "ml-[20%]" : ""}>
         <Header toggleMenu={toggleMenu} />
 
-        {/* <NavBar /> */}
-        <Headline />
+        <NavBar />
+        {/* <Headline /> */}
         <div className="relative">
           <img src={bg} alt="Banner" className="w-full h-96 object-cover" />
           <div className="absolute inset-0 flex items-center justify-center">
@@ -36,7 +38,7 @@ const Home = () => {
         </div>
         <Nave />
         <Recommendation />
-        <PromoCard image={image} />
+        <PromoCard images={[image, image2, image3]} />
         <Products />
       </div>
     </>

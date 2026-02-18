@@ -11,7 +11,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center border-b-2 border-gray-300 p-4 m-2">
+    <nav className="flex justify-between items-center border-b-2 p-4 m-2">
       <div className="relative ml-40">
         <GoSearch className="absolute left-220 top-1/2 -translate-y-1/2 text-gray-600" />
         <input
