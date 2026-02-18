@@ -4,6 +4,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { BsFillBagHeartFill } from "react-icons/bs";
 import Recommendation from "../../Recommendation/Recommendation";
+import Loader from "../loader";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -27,7 +28,7 @@ const Products = () => {
   return (
     <div className="bg-amber-300 p-4">
       {loading ? (
-        <p>Loading products...</p>
+        <Loader />
       ) : (
         <div className="md:col-span-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
