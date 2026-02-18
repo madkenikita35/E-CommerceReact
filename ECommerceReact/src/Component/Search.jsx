@@ -30,27 +30,19 @@ const Search = () => {
     <div className="flex flex-col items-center">
       <div className="flex gap-4 mb-4">
         <InputText
-          className="gap-4"
           style={{
             width: "300px",
             backgroundColor: "#f2cb55",
             padding: "0.5rem",
             borderRadius: "0.375rem",
             border: "1px solid #d1d5db",
+            marginLeft: "1rem",
             marginRight: "0.5rem",
           }}
           placeholder="Search..."
           onChange={handleChange}
           value={searchTerm}
         />
-      </div>
-      <div className="m-4">
-        <button
-          onClick={searchItem}
-          className="bg-amber-500 text-white px-4 py-2 rounded-md"
-        >
-          Search
-        </button>
       </div>
     </div>
   );

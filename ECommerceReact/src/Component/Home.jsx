@@ -8,6 +8,8 @@ import Recommendation from "../Recommendation/Recommendation";
 import Sidebar from "../Sidebar/Sidebar";
 import { FiAlignJustify } from "react-icons/fi";
 import Headline from "./Headline";
+import PromoCard from "./PromoCard";
+import image from "../assets/image.png";
 
 const Home = () => {
   const [menu, setMenu] = useState(false);
@@ -21,7 +23,8 @@ const Home = () => {
 
       <div className={menu ? "ml-[20%]" : ""}>
         <Header toggleMenu={toggleMenu} />
-        <NavBar />
+
+        {/* <NavBar /> */}
         <Headline />
         <div className="relative">
           <img src={bg} alt="Banner" className="w-full h-96 object-cover" />
@@ -33,6 +36,7 @@ const Home = () => {
         </div>
         <Nave />
         <Recommendation />
+        <PromoCard image={image} />
         <Products />
       </div>
     </>

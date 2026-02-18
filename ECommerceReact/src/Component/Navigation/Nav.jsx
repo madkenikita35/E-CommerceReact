@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
+import { GoSearch } from "react-icons/go";
 
 const Nav = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -11,17 +12,15 @@ const Nav = () => {
 
   return (
     <nav className="flex justify-between items-center border-b-2 border-gray-300 p-4 m-2">
-      <div>
+      <div className="relative ml-40">
+        <GoSearch className="absolute left-220 top-1/2 -translate-y-1/2 text-gray-600" />
         <input
           type="text"
-          className="w-[300px] bg-[#f2cb55] p-2 rounded-md border border-gray-300"
+          className="ml-80 w-[600px] bg-[#f2cb55] p-2 rounded-md border border-gray-300"
           placeholder="Search..."
           onChange={handleChange}
           value={searchTerm}
         />
-        <button className="bg-amber-500 text-white px-4 py-2 rounded-md">
-          Search
-        </button>
       </div>
       <div className="flex gap-4 text-xl">
         <a href="#">
