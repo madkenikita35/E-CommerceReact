@@ -27,9 +27,10 @@ const Search = () => {
   };
 
   return (
-    <div className="flex flex-col items-center m-4">
+    <div className="flex flex-col items-center">
       <div className="flex gap-4 mb-4">
         <InputText
+          className="gap-4"
           style={{
             width: "300px",
             backgroundColor: "#f2cb55",
