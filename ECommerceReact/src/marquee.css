@@ -1,0 +1,35 @@
+.marquee {
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.shine-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff0080, #f85cce, rgb(255, 0, 30));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation:
+    scroll 10s linear infinite,
+    shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200%;
+  }
+  100% {
+    background-position: -200%;
+  }
+}
