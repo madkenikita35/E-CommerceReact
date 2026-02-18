@@ -12,6 +12,7 @@ import PromoCard from "./PromoCard";
 import image from "../assets/image.png";
 import image3 from "../assets/image3.png";
 import image2 from "../assets/image2.png";
+import Footer from "../Footer";
 
 const Home = () => {
   const [menu, setMenu] = useState(false);
@@ -40,6 +41,7 @@ const Home = () => {
         <Recommendation />
         <PromoCard images={[image, image2, image3]} />
         <Products />
+        <Footer />
       </div>
     </>
   );

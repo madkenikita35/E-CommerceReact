@@ -26,7 +26,7 @@ const Products = () => {
   }, []);
 
   return (
-    <div className="bg-amber-300 p-4">
+    <div className="bg-white p-4">
       {loading ? (
         <Loader />
       ) : (
