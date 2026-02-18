@@ -4,7 +4,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { BsFillBagHeartFill } from "react-icons/bs";
 import Recommendation from "../../Recommendation/Recommendation";
-import Loader from "../loader";
+import Loader from "../Loader";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
