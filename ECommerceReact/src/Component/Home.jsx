@@ -10,8 +10,8 @@ import { FiAlignJustify } from "react-icons/fi";
 import Headline from "./Headline";
 import PromoCard from "./PromoCard";
 import image from "../assets/image.png";
-import image3 from "../assets/image.png";
-import image2 from "../assets/image.png";
+import image3 from "../assets/image3.png";
+import image2 from "../assets/image2.png";
 
 const Home = () => {
   const [menu, setMenu] = useState(false);
