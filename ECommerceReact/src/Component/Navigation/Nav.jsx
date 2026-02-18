@@ -17,7 +17,7 @@ const Nav = () => {
         <IoSearch className="absolute left-220 top-1/2 -translate-y-1/2 text-black" />
         <input
           type="text"
-          className="md:ml-80 sm:ml-20 w-[600px] bg-[#f2cb55] p-2 rounded-md border border-gray-300"
+          className="md:ml-80 sm:ml-0 md:w-[600px] sm:w-[300px] bg-[#f2cb55] p-2 rounded-md border border-gray-300"
           placeholder="Search..."
           onChange={handleChange}
           value={searchTerm}
