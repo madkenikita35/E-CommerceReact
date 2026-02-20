@@ -12,7 +12,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center border-b-2 p-4 m-2">
+    <nav className="flex justify-between items-center border-b-2 md:border-b-2 sm:border-b-2 p-4 m-2 md:w-full sm:w-1/2">
       <div className="relative ml-40">
         <IoSearch className="absolute left-220 top-1/2 -translate-y-1/2 text-black" />
         <input
